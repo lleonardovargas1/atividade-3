@@ -1,0 +1,50 @@
+
+
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color:black;  
+
+}
+#contador{
+    background-color: purple;
+ color: white;   
+ padding: 32px;
+}
+*{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ box-sizing: border-box;   
+ padding: 0px;
+ margin: 0px;
+}
+#valor{
+  font-size: 128px;
+  min-width: 224px;
+  text-align: center;
+  color: white;  
+}
+button{
+    border: none;
+    color: white;
+    cursor: crosshair;
+}
+.botao-contador{
+height:96px;
+width: 96px;
+font-size: 48px; 
+background-color: black;   
+}
+#contador div{
+align-items: center;
+display: flex;    
+}
+#resetar{
+    width:100%;
+font-size:24px;
+color: black; 
+padding: 14px;  
+margin-top: 10px; 
+}
