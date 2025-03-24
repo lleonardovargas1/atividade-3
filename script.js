@@ -4,17 +4,21 @@ const menosbotao = document.getElementById('menos');
 const resetbotao = document.getElementById('resetar');
 
 let contador = 0;  // Usei let pois o valor será modificado
-let intervaloid = null; // Inicializa com null
+let intervaloid = null; // Inicializa com null pois nao tem intervalo ainda
 
 const atualizarValor = () => {
     valor.innerHTML = contador; // Atualizei  o valor exibido
 };
 
-if (operacao === 'mais') {
-    contador = contador + 1;  // Se a operação for 'mais', soma 1 ao contador
-} else {
-    contador = contador - 1;  // Caso contrário, se for 'menos', subtrai 1
-}
+const iniciarAlteracao = (operacao) => {
+   
+    if (operacao === 'mais') {
+        contador = contador + 1;  // Se a operação for 'mais', soma 1 ao contador
+    } else if (operacao === 'menos') {
+        contador = contador - 1;  // Se a operação for 'menos', subtrai 1
+    }
+    atualizarValor(); // Atualiza o valor após a operação if e else
+};
 // Adicionei os eventos corretamente
 maisbotao.addEventListener('mousedown', () => iniciarAlteracao('mais'));
 menosbotao.addEventListener('mousedown', () => iniciarAlteracao('menos'));
