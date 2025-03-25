@@ -29,7 +29,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 button{
     border: none;
     color: white;
-    cursor: crosshair;
+  
 }
 .botao-contador{
 height:96px;
