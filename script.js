@@ -3,11 +3,11 @@ const maisbotao = document.getElementById('mais');
 const menosbotao = document.getElementById('menos');
 const resetbotao = document.getElementById('resetar');
 
-let contador = 0;  // Usei let pois o valor será modificado
+let contador = 0;  // Usei o let pois o valor será modificado
 let intervaloid = null; // Inicializa com null pois nao tem intervalo ainda
 
 const atualizarValor = () => {
-    valor.innerHTML = contador; // Atualizei  o valor exibido
+    valor.innerHTML = contador; // Atualizei  o valor exibido no contador
 };
 
 const iniciarAlteracao = (operacao) => {
