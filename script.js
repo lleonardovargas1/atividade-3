@@ -11,13 +11,13 @@ const atualizarValor = () => {
 };
 
 const iniciarAlteracao = (operacao) => {
-   
+    // Dependendo da operação, aumenta ou diminui o contador
     if (operacao === 'mais') {
         contador = contador + 1;  // Se a operação for 'mais', soma 1 ao contador
     } else if (operacao === 'menos') {
         contador = contador - 1;  // Se a operação for 'menos', subtrai 1
     }
-    atualizarValor(); // Atualiza o valor após a operação if e else
+    atualizarValor(); // Atualiza o valor após a operação
 };
 // Adicionei os eventos corretamente
 maisbotao.addEventListener('mousedown', () => iniciarAlteracao('mais'));
